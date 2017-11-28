@@ -9,7 +9,7 @@
 namespace App\Clients;
 
 
-interface ClientDataInterface
+interface ClientDataInterface extends ClientDataSetterInterface,ClientDataGetterInterface
 {
 
 }

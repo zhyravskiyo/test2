@@ -104,7 +104,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY','base64:ICifOCS3X+U09duoOzgoI7PsLiPbip58dKKdBEyxdDY='),
 
     'cipher' => 'AES-256-CBC',
 
@@ -167,7 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Laravel\Passport\PassportServiceProvider::class,
         /*
          * Application Service Providers...
          */
